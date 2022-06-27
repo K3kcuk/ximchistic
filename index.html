@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            
+            <script src="https://kit.fontawesome.com/98683947bc.js" crossorigin="anonymous"></script>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="icon" href="images/icons/favicon.png" type="image/png">
+            
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+            
+            <link rel="stylesheet" href="styles/index.css">
+
+            <title>Химчистик</title>
+            
+        </head>
+        <body>
+            <div class="wrapper_main">
+                <a name="top"></a>
+            <div class="header">
+                <div class="header__top">
+                    <div class="header__item header_logo"></div>
+                    <div class="header__item header_name">
+                        <span>Химчистик</span>
+                    </div>
+                    <div class="header__item header_shop">
+                        <a href="#basket"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div id="basket" class="basket">
+                        <div>
+                            <a href="#close" title="Закрыть" class="close">X</a>
+                            <div>
+                                <p>Итого:</p>
+                                <p>1234 рублей</p>
+                            </div>
+                            <div>
+                                <p>Количество товаров:</p>
+                                <p><input type="number" name="number" value="1" min="1" max="10" step="1"></p>
+                            </div>
+                            <div>
+                                <p><a href="#" class="button_second">оформить заказ</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <a href="index.html"><div class="header__item header_button"><i class="fa-solid fa-house"></i><span>Главная</span></div></a>
+                    <a href="shop.html"><div class="header__item header_button"><i class="fa-solid fa-tags"></i><span>Магазин</span></div></a>
+                    <a href="price.html"><div class="header__item header_button"><i class="fa-solid fa-sack-dollar"></i><span>Цены</span></div></a>
+                    <a href="gallery.html"><div class="header__item header_button"><i class="fa-solid fa-camera-retro"></i><span>Галерея</span></div></a>
+                    <a href="review.html"><div class="header__item header_button"><i class="fa-solid fa-pen"></i><span>Отзывы</span></div></a>
+                </div>
+            </div>
+            
+            <div class="slider">
+                <div class="slide"><img src="images/slider/slide_1.jpg" alt="slide_1"></div>
+                <div class="slide"><img src="images/slider/slide_2.jpg" alt="slide_2"></div>
+                <div class="slide"><img src="images/slider/slide_3.jpg" alt="slide_3"></div>
+                <div class="slide"><img src="images/slider/slide_4.jpg" alt="slide_4"></div>
+                <div class="slide"><img src="images/slider/slide_5.jpg" alt="slide_5"></div>
+            </div>
+
+            <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script>jQuery(function ($){
+                if ($(".slider").length > 0) {
+                    $(".slider").slick({
+                        autoplay: 2000,
+                        dots: true,
+                        arrows: false,
+                        slidesToShow: 3,
+                    });
+                }
+                if ($(".discount").length > 0) {
+                    $(".discount").slick({
+                        autoplay: true,
+                        arrows: false,
+                        autoplay: 3000,
+                        slidesToShow: 1,
+                        infinite: true,
+                        speed: 500,
+                    });
+                }
+            });
+            </script>
+
+            <h1>О компании</h1>
+
+                <div class="directors">
+                    <div class="about_director">
+                        <img src="images/directors/director_1.jpg" alt="director_1">
+                    </div>
+                    <div class="about_director">
+                        <img src="images/directors/director_2.jpg" alt="director_2">
+                    </div>
+                </div>
+                <div class="about_us">
+                    <h1>Работаем более 6 лет на рынке клининговых и бытовых услуг!</h1>
+                    <h4>
+                        В 2015 году компания «Химчистик» начала свою работу на рынке услуг г. Витебска. Химчистик предоставляет услуги профессиональной химчистки салонов автомобилей, мебели, ковров, детских колясок и игрушек. Если вам нужна качественная и быстрая химчистка, добро пожаловать к нам!
+                    </h4>
+                        <h1>Работаем здесь и сейчас</h1>
+                    <h4>
+                        Работая бережно и деликатно на оборудовании лучших европейских производителей и только с экологичными веществами премиум класса, нам доверяют выполнять широкий спектр услуг:
+                    </h4>
+                
+                        <ul>
+                            <li><h4>химчистка машин</h4></li>
+                            <li><h4>аква-чистка мебели, ковров, колясок</h4></li>
+                            <li><h4>экспресс-чистка</h4></li>
+                            <li><h4>чистка, тонирование и водоотталкивание кожи, замши и меха</h4></li>
+                        </ul>
+                    
+                    <h4>
+                        Вежливое и доброжелательное общение сотрудников «Химчистик» с клиентами делает наш сервис еще более качественным. Мы ориентируемся на международный опыт клининговой индустрии, используя профессиональное оборудование мировых лидеров, и применяя только высококачественные современные материалы, которые не выделяют вредные вещества, отравляющие воздух. В своей работе мы придерживаемся главного принципа – &#171;чистота – залог здоровья&#187;.
+                    </h4>
+                        <h1>Мы будем рады видеть вас среди наших клиентов, и уверены, что наше сотрудничество будет полезным и приятным!</h1>
+                    <h4>
+                        Получить бесплатную консультацию и сделать предварительный расчёт вы можете по телефону:
+                    </h4>
+                    <h4>
+                        <span>+375 29 512 -74-78</span> с 9.00 до 21.00, <span>БЕЗ ВЫХОДНЫХ!</span><br>Выезд специалиста на объект осуществляется <span>БЕСПЛАТНО</span> и в удобное для вас время!
+                    </h4>
+                </div>
+                
+            <div class="middle_wrapper">
+                <div class="video_wrapper">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VC-zlXJzaDI?controls=0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="discount">
+                <div class="discount_slide"><img src="images/discount/discount_1.jpg" alt="discount_1"></div>
+                <div class="discount_slide"><img src="images/discount/discount_2.jpg" alt="discount_2"></div>
+                <div class="discount_slide"><img src="images/discount/discount_3.jpg" alt="discount_3"></div>
+                <div class="discount_slide"><img src="images/discount/discount_4.jpg" alt="discount_4"></div>
+                <div class="discount_slide"><img src="images/discount/discount_5.jpg" alt="discount_5"></div>
+                </div>
+            </div>
+
+            <h1>заполните анкету и с вами свяжится наш менеджер</h1>
+
+            <div class="review_write">
+                <form>
+                    <fieldset class="fieldset">
+                            <div class="form">
+                                <label for="text" class="form_label">Введите ваше имя:</label>
+                                <div class="form_text">
+                                    <input id="text" name="text" type="text" class="text_field" maxlength="20" placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="form">
+                                <label for="text" class="form_label">Введите ваш адрес:</label>
+                                <div class="form_text">
+                                    <input id="text_second" name="text" type="text" class="text_field" maxlength="20" placeholder="Адрес">
+                                </div>
+                            </div>
+                            <div class="form">
+                                <label for="text" class="form_label">Введите ваш номер телефона:</label>
+                                <div class="form_text">
+                                    <input id="text_third" name="text" type="text" class="text_field" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="form">
+                                <label for="text" class="form_label">прикрепите фото для консультирования:</label>
+                                <div class="form_text">
+                                <input type="file" class="download_file" id="download">
+                                </div>
+                            </div>
+                            <div class="form form_width">
+                                <label for="textarea" class="form_label">Комментарий:</label>
+                                <div class="form_text_message">
+                                    <textarea placeholder="Оставьте свой отзыв" maxlength="500" id="textarea" name="textarea" cols="40" rows="5" class="form_textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="form form_width">
+                                <button type="button" id="button1id" name="button1id" class="btn">Оставить заявку</button>
+                            </div>
+                            <div class="form">
+                                <h4>Прием заказов: с <span>9:00-21:00.</span> без выходных.</h4>
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <h1>Наши партнеры</h1>
+
+            <div class="partners">
+                <div class="partner">
+                    <img src="images/partners/acme.jpg" alt="acme">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/avant.jpg" alt="авант-техно">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/lider.jpg" alt="лидердом">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/oma.jpg" alt="ома">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/ingosstrah.jpg" alt="ингосстрах">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/clean.jpg" alt="чистая компания">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/sdek.jpg" alt="СДЭК">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/evro.jpg" alt="евро вес">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/avenu.jpg" alt="строй авеню">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/livkor.jpg" alt="ливкор">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/plus.jpg" alt="cleaning plus">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/sylpfea.jpg" alt="сильфея">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/city.jpg" alt="чистый городок">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/primex.jpg" alt="primex">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/team.jpg" alt="clean-team">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/24.jpg" alt="уборка-24">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/m.jpg" alt="чисти-м">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/vikilini.jpg" alt="vikilini">
+                </div>
+                <div class="partner">
+                    <img src="images/partners/service.jpg" alt="клининг сервис">
+                </div>
+            </div>
+
+            <h1>С нами можно связаться:</h1>
+
+            <div class="contacts">
+                <a target="_blank" href="https://www.google.com/maps/place/%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A7%D0%BA%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0+13,+%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA/@55.1755557,30.2113079,17z/data=!3m1!4b1!4m5!3m4!1s0x46c57167bf6db957:0x35873cb3eaa9ebff!8m2!3d55.1755557!4d30.2134966?hl=ru"><div class="info"><i class="fa-solid fa-location-dot"></i>ул. Чкалова 13</div></a>
+                <a href="mailto:pyshistic_1992@mail.ru"><div class="info"><i class="fa-solid fa-envelope"></i>pyshistic_1992@mail.ru</div></a>
+                <a href="tel:+375295126467"><div class="info"><i class="fa-solid fa-phone"></i>+375(29)512-64-67</div></a>
+            </div>
+
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac1a7f2aa2da6ba4f5cb69c038f3b5cd563c3698b388601c6319bbfc99cacacd&amp;&amp;height=518&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+            <div class="payments">
+                <div class="payments__copyright">
+                    <p>ООО "Химчистик". УНП 391806188, свидетельство выдано витебским горисполкомом 10 октября 2019 года.</p>
+                    <p>Юридический адрес: Республика Беларусь, г. Витебск, ул. Чкалова 13-57. Время приема заказа - круглосуточно.</p>
+                </div>
+                <div class="pay">
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                </div>
+                <div class="pay">
+                    <i class="fa-brands fa-cc-visa"></i>
+                </div>
+                <div class="pay">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                </div>
+                <div class="pay">
+                    <i class="fa-brands fa-bitcoin"></i>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="copyright">
+                    <h3><i class="fa fa-copyright"></i>2022 Все права у Михаила</h3>
+                </div>
+                <div class="links">
+                        <div><h3>Мы в социальных сетях:</h3></div>
+                        <a href="https://vk.com/xim4istik" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+                        <a href="https://www.facebook.com/xim4istik" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="https://www.instagram.com/xim4istik/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+                </div>
+            </div>
+            <a  class="top" href="#top"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+        </body>
+    </html>
